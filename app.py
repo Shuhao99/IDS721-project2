@@ -8,7 +8,7 @@ def hello():
 
 @app.route("/<number>")
 def convert(number):
-    return "The binary number is: " + str(bin(number).replace("0b", "")) + ".\n" + "The hex number is: " + str(hex(number).replace("0x", ""))
+    return "The binary number is: " + str(bin(int(number)).replace("0b", "")) + ".\n" + "The hex number is: " + str(hex(int(number)).replace("0x", ""))
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0',port = 5000)
