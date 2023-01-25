@@ -11,7 +11,11 @@ Deployed a simple decimal converter on the AWS platform
 ## Usage
 This app is running on my server at port 5000, the public url of my server is ec2-18-205-26-232.compute-1.amazonaws.com.
 
-- You can visit this link: ec2-18-205-26-232.compute-1.amazonaws.com:5000 You should see 
+- You can visit this link: 
+```
+ec2-18-205-26-232.compute-1.amazonaws.com:5000
+```
+You should see 
   ``` 
         Hey, It's Shuhao's server!
   ```
