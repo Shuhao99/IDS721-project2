@@ -6,7 +6,7 @@ app = Flask(__name__)
 def hello():
     return "Hey, It's Shuhao's server!"
 
-@app.route("/<number>")
+@app.route("/try/<number>")
 def convert(number):
     return "The binary number is: " + str(bin(int(number)).replace("0b", "")) + "." + "The hex number is: " + str(hex(int(number)).replace("0x", "")) + "."
 
