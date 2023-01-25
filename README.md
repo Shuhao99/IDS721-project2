@@ -30,4 +30,5 @@ ec2-18-205-26-232.compute-1.amazonaws.com:5000/<number you want to check>.
 ec2-18-205-26-232.compute-1.amazonaws.com:5000/1000. 
 ```
 You should see:
+
 ![result](./images/result.png)
