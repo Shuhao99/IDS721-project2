@@ -1,34 +1,18 @@
 # IDS 721 project 1 -- Microservice deployed on cloud 
 
 ## Overview
-Deployed a simple decimal converter on the AWS platform
+Deployed a simple decimal converter on the AWS platform. You can check the binary and hex format of the decimal input. A graphical UI is provided.
 
 ## Works
 - Apply Flask to create a python app on AWS EC2 cloud platform
-- Use AWS Cloud9 as laC to deploy the app
-![cloud9](./images/cloud9.png)
+- The app is deployed using docker, the docker image is built and pushed to the EC repository
+![ECR](./images/ECR.png)
+- Create micro-service on aws app runner, it will automatically deployed the service whenever the docker images is modified.
+![apprun](./images/apprunner.png)
 
 ## Usage
-This app is running on my server at port 5000, the public url of my server is ec2-18-205-26-232.compute-1.amazonaws.com.
+This service is available at https://m2cpvkpinq.us-east-1.awsapprunner.com/
 
-- You can visit this link: 
-```
-ec2-18-205-26-232.compute-1.amazonaws.com:5000
-```
-You should see 
-  ``` 
-        Hey, It's Shuhao's server!
-  ```
-by click on this link.
+## The screen shot of this service
 
-- To use this service you use the url in the format of 
-```
-ec2-18-205-26-232.compute-1.amazonaws.com:5000/try/<number you want to check>.
-```
-- For example: 
-```
-ec2-18-205-26-232.compute-1.amazonaws.com:5000/try/1000 
-```
-You should see:
-
-![result](./images/result.png)
+![result](./images/UI.png)
